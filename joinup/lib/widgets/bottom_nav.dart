@@ -5,6 +5,8 @@ import '../screens/messages_screen.dart';
 import '../screens/profile_screen.dart';
 
 class BottomNav extends StatefulWidget {
+  const BottomNav({super.key});
+
   @override
   State<BottomNav> createState() => _BottomNavState();
 }

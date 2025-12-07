@@ -14,6 +14,24 @@ class EventDetailScreen extends StatelessWidget {
         children: [
           Image.network(event.image, fit: BoxFit.cover),
           Container(color: Colors.black45),
+
+          // 🔙 FRECCIA "INDIETRO"
+          Positioned(
+            top: 45,
+            left: 20,
+            child: GestureDetector(
+              onTap: () => Navigator.pop(context),
+              child: Container(
+                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.black38,
+                  shape: BoxShape.circle,
+                ),
+                child: Icon(Icons.arrow_back, color: Colors.white, size: 28),
+              ),
+            ),
+          ),
+
           Positioned(
             bottom: 50,
             left: 20,

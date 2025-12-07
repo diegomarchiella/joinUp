@@ -6,6 +6,8 @@ void main() {
 }
 
 class JoinUpApp extends StatelessWidget {
+  const JoinUpApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
